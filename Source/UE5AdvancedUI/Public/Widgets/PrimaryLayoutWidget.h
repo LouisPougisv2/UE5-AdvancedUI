@@ -8,7 +8,7 @@
 #include "PrimaryLayoutWidget.generated.h"
 
 /**
- * 
+ * Widget that registers the Widget Stacks
  */
 UCLASS(Abstract, BlueprintType, meta = (DisableNativeTick))
 class UE5ADVANCEDUI_API UPrimaryLayoutWidget : public UCommonUserWidget
@@ -22,6 +22,7 @@ protected:
 
 	UFUNCTION(BlueprintCallable)
 	void RegisterWidgetStack(UPARAM(meta = (Categories = "AdvancedUI.WidgetStack")) FGameplayTag InStackTag, class UCommonActivatableWidgetContainerBase* InWidgetStack);
+	
 private:
 
 	UPROPERTY(Transient)

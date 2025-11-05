@@ -18,9 +18,6 @@ void UPrimaryLayoutWidget::RegisterWidgetStack(FGameplayTag InStackTag, UCommonA
         if(!RegisteredWidgetStackMap.Contains(InStackTag))
         {
             RegisteredWidgetStackMap.Add(InStackTag, InWidgetStack);
-
-            // Only for Debug purposes
-            AdvancedUIDebug::Print(TEXT("Widget stack regitered with tag ") + InStackTag.ToString());
         }
     }
 }
