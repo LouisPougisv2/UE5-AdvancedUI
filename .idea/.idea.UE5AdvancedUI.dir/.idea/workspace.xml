@@ -8,18 +8,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea8eb6f-2fcf-437c-b993-7607ac42a919" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/UI/WBP_Template_Layout.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/WBP_Test.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AsyncActions/AsyncAction_PushSoftWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Subsystems/AdvancedUISubsystem.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Widgets/CommonActivatableWidgetBase.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AsyncActions/AsyncAction_PushSoftWidget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Subsystems/AdvancedUISubsystem.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Widgets/CommonActivatableWidgetBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/WBP_TextStyle_Default.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/Widgets/WBP_PressAnyKey.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AdvancedUIFunctionLibrary.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AdvancedUISettings/AdvancedUIDeveloperSettings.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AdvancedUIFunctionLibrary.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AdvancedUISettings/AdvancedUIDeveloperSettings.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UE5AdvancedUI.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UE5AdvancedUI.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/UI/BP_AUIPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/BP_AUIPlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Widgets/PrimaryLayoutWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Widgets/PrimaryLayoutWidget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Widgets/PrimaryLayoutWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Widgets/PrimaryLayoutWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_Test.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AUIGameplayTags.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AUIGameplayTags.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AUIGameplayTags.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AUIGameplayTags.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UE5AdvancedUI.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/UE5AdvancedUI.uproject" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,48 +31,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AUIGameplayTags.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AdvancedUISettings/AdvancedUIDeveloperSettings.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Widgets/PrimaryLayoutWidget.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AUIGameplayTags.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AdvancedUISettings/AdvancedUIDeveloperSettings.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Controllers/AUIPlayerController.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Widgets/PrimaryLayoutWidget.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/UE5AdvancedUI/UE5AdvancedUI.Build.cs" root0="FORCE_HIGHLIGHTING" />
@@ -191,7 +155,8 @@
       <workItem from="1762249572663" duration="4000" />
       <workItem from="1762251836179" duration="1481000" />
       <workItem from="1762261601211" duration="6088000" />
-      <workItem from="1762334559533" duration="16997000" />
+      <workItem from="1762334559533" duration="17055000" />
+      <workItem from="1762412760436" duration="5941000" />
     </task>
     <servers />
   </component>
