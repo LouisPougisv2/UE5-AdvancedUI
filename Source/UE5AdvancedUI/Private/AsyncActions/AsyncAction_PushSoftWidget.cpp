@@ -49,6 +49,13 @@ void UAsyncAction_PushSoftWidget::Activate()
                 case EAsyncPushWidgetState::AfterPush:
                     
                     OnCreatedWidgetAfterPush.Broadcast(InPushedWidget);
+
+                    if(UWidget* WidgetToFocus = InPushedWidget->GetDesiredFocusTarget())
+                    {
+                        WidgetToFocus->SetFocus();
+                    }
+                
+                    SetReadyToDestroy();
                     break;
                 
                 default:

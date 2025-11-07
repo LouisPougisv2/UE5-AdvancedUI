@@ -8,19 +8,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea8eb6f-2fcf-437c-b993-7607ac42a919" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/WBP_TextStyle_Default.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/Widgets/WBP_PressAnyKey.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AdvancedUIFunctionLibrary.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AdvancedUISettings/AdvancedUIDeveloperSettings.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AdvancedUIFunctionLibrary.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AdvancedUISettings/AdvancedUIDeveloperSettings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/Buttons/WBP_CommonButton_DefaultStyle.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/Buttons/WBP_CommonButton_DefaultStyle_Menu.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/Text/WBP_TextStyle_Default.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/Text/WBP_TextStyle_Highlighted.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/Text/WBP_Text_ButtonDescription.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/Widgets/Components/WBP_ButtonDefault.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/Widgets/WBP_ButtonDescription.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/Widgets/WBP_MainMenu.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Widgets/Components/AdvancedUICommonButtonBase.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Widgets/Components/AdvancedUICommonButtonBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UE5AdvancedUI.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UE5AdvancedUI.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/BP_AUIPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/BP_AUIPlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_Test.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AUIGameplayTags.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AUIGameplayTags.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AUIGameplayTags.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AUIGameplayTags.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UE5AdvancedUI.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/UE5AdvancedUI.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/Styles/WBP_TextStyle_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/Styles/WBP_TextStyle_Default.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/Widgets/WBP_PressAnyKey.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/Widgets/WBP_PressAnyKey.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AsyncActions/AsyncAction_PushSoftWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AsyncActions/AsyncAction_PushSoftWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Widgets/CommonActivatableWidgetBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Widgets/CommonActivatableWidgetBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Subsystems/AdvancedUISubsystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Subsystems/AdvancedUISubsystem.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Widgets/CommonActivatableWidgetBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Widgets/CommonActivatableWidgetBase.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +37,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AUIGameplayTags.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AdvancedUISettings/AdvancedUIDeveloperSettings.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Widgets/PrimaryLayoutWidget.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -53,7 +65,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Uproject.UE5AdvancedUI.executor&quot;: &quot;Debug&quot;,
     &quot;ezargs.lastUsed&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;SetUpCommonUI&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;MainMenu&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -156,7 +168,8 @@
       <workItem from="1762251836179" duration="1481000" />
       <workItem from="1762261601211" duration="6088000" />
       <workItem from="1762334559533" duration="17055000" />
-      <workItem from="1762412760436" duration="5941000" />
+      <workItem from="1762412760436" duration="12662000" />
+      <workItem from="1762503591348" duration="6506000" />
     </task>
     <servers />
   </component>

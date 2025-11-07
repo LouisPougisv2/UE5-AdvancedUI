@@ -6,6 +6,8 @@
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "AdvancedUISubsystem.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnButtonDescriptionTextUpdatedDelegate, UAdvancedUICommonButtonBase*, InBroadCastingButton, FText, DescriptionText);
+
 enum class EAsyncPushWidgetState : uint8
 {
     OnCreatedBeforePush,
@@ -32,6 +34,12 @@ public:
     void RegisterPrimaryLayoutWidget(class UPrimaryLayoutWidget* InPrimaryLayoutWidget);
 
     void PushSoftWidgetToStackAsync(const struct FGameplayTag& InWidgetStackTag, TSoftClassPtr<class UCommonActivatableWidgetBase> InSoftWidgetClass, TFunction<void (EAsyncPushWidgetState, class UCommonActivatableWidgetBase*)> AsyncPushStateCallback);
+
+// Variables
+public:
+    
+    UPROPERTY(BlueprintAssignable)
+    FOnButtonDescriptionTextUpdatedDelegate OnButtonDescriptionTextUpdatedDelegate;
     
 private:
 
