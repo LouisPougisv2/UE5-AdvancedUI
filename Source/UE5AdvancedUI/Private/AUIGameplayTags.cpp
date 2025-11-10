@@ -13,4 +13,5 @@ namespace FAdvancedUIGameplayTags
     // Advanced UI Widget
     UE5ADVANCEDUI_API UE_DEFINE_GAMEPLAY_TAG(AdvancedUI_Widget_PressAnyKeyScreen, "AdvancedUI.Widget.PressAnyKeyScreen")
     UE5ADVANCEDUI_API UE_DEFINE_GAMEPLAY_TAG(AdvancedUI_Widget_MainMenu, "AdvancedUI.Widget.MainMenu")
+    UE5ADVANCEDUI_API UE_DEFINE_GAMEPLAY_TAG(AdvancedUI_Widget_ConfirmScreen, "AdvancedUI.Widget.ConfirmScreen")
 }

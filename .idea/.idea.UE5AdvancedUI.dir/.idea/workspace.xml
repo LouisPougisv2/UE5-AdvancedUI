@@ -8,25 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea8eb6f-2fcf-437c-b993-7607ac42a919" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/Buttons/WBP_CommonButton_DefaultStyle.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/Buttons/WBP_CommonButton_DefaultStyle_Menu.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/Text/WBP_TextStyle_Default.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/Text/WBP_TextStyle_Highlighted.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/Text/WBP_Text_ButtonDescription.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/Widgets/Components/WBP_ButtonDefault.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/Widgets/WBP_ButtonDescription.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/Widgets/WBP_MainMenu.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Widgets/Components/AdvancedUICommonButtonBase.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Widgets/Components/AdvancedUICommonButtonBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/CommonInputData/BP_ControllerData_Gamepad.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/CommonInputData/DT_CommonInputKeyMapping.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/CommonInputData/Icon_ControllerData_MouseKeyboard.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/CommonInputData/InputData_Default.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/Styles/Text/WBP_TextStyle_BoundAction.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/Widgets/Components/WBP_ButtonBoundAction.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AsyncActions/AsyncAction_PushConfirmScreen.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Widgets/ConfirmScreenWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AdvancedUITypes/AdvancedUIEnumTypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AsyncActions/AsyncAction_PushConfirmScreen.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Widgets/ConfirmScreenWidget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UE5AdvancedUI.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UE5AdvancedUI.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/Styles/WBP_TextStyle_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/Styles/WBP_TextStyle_Default.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/Widgets/WBP_PressAnyKey.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/Widgets/WBP_PressAnyKey.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AsyncActions/AsyncAction_PushSoftWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AsyncActions/AsyncAction_PushSoftWidget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Widgets/CommonActivatableWidgetBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Widgets/CommonActivatableWidgetBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/Widgets/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/Widgets/WBP_MainMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AUIGameplayTags.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/AUIGameplayTags.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Subsystems/AdvancedUISubsystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Private/Subsystems/AdvancedUISubsystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AUIGameplayTags.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/AUIGameplayTags.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Subsystems/AdvancedUISubsystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Subsystems/AdvancedUISubsystem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Widgets/CommonActivatableWidgetBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/Public/Widgets/CommonActivatableWidgetBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/UE5AdvancedUI/UE5AdvancedUI.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UE5AdvancedUI/UE5AdvancedUI.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +170,9 @@
       <workItem from="1762261601211" duration="6088000" />
       <workItem from="1762334559533" duration="17055000" />
       <workItem from="1762412760436" duration="12662000" />
-      <workItem from="1762503591348" duration="6506000" />
+      <workItem from="1762503591348" duration="7986000" />
+      <workItem from="1762520746750" duration="4728000" />
+      <workItem from="1762760198056" duration="16700000" />
     </task>
     <servers />
   </component>
