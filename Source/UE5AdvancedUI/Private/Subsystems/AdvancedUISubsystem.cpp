@@ -2,11 +2,13 @@
 
 
 #include "Subsystems/AdvancedUISubsystem.h"
-
 #include "AdvancedUIDebugHelper.h"
+#include "AdvancedUIFunctionLibrary.h"
+#include "AUIGameplayTags.h"
 #include "Engine/AssetManager.h"
 #include "Widgets/CommonActivatableWidgetBase.h"
 #include "Widgets/CommonActivatableWidgetContainer.h"
+#include "Widgets/ConfirmScreenWidget.h"
 #include "Widgets/PrimaryLayoutWidget.h"
 
 UAdvancedUISubsystem* UAdvancedUISubsystem::Get(const UObject* InWorldContextObject)
@@ -72,4 +74,41 @@ void UAdvancedUISubsystem::PushSoftWidgetToStackAsync(const FGameplayTag& InWidg
             }
         )
     );
+}
+
+void UAdvancedUISubsystem::PushConfirmScreenToModalStackBasic(EConfirmScreenType InScreenType, const FText& InScreenTitle, const FText& InScreenMessage, TFunction<void(EConfirmationScreenButtonType)> ButtonClickedCallback)
+{
+    UConfirmScreenInfoObject* CreatedInfoObject = nullptr;
+    
+    switch (InScreenType)
+    {
+    case EConfirmScreenType::Ok:
+        CreatedInfoObject = UConfirmScreenInfoObject::CreateOKScreen(InScreenTitle, InScreenMessage);
+        break;
+
+    case EConfirmScreenType::YesNo:
+        CreatedInfoObject = UConfirmScreenInfoObject::CreateYesNoScreen(InScreenTitle, InScreenMessage);
+        break;
+        
+    case EConfirmScreenType::OkCancel:
+        CreatedInfoObject = UConfirmScreenInfoObject::CreateOkCancelScreen(InScreenTitle, InScreenMessage);
+        break;
+        
+    case EConfirmScreenType::Default:
+        break;
+    }
+
+    ensureAlwaysMsgf(CreatedInfoObject, TEXT("%s : CreatedInfoObject is not valid before pushing to stack"), *FString(__FUNCTION__));
+
+    PushSoftWidgetToStackAsync(
+        FAdvancedUIGameplayTags::AdvancedUI_WidgetStack_Modal,
+        UAdvancedUIFunctionLibrary::GetAdvancedUISoftWidgetClassByTag(FAdvancedUIGameplayTags::AdvancedUI_Widget_ConfirmScreen),
+        [CreatedInfoObject,ButtonClickedCallback](EAsyncPushWidgetState InPushWidgetState, UCommonActivatableWidgetBase* InPushedWidget)
+        {
+            if(InPushWidgetState == EAsyncPushWidgetState::OnCreatedBeforePush)
+            {
+                UConfirmScreenWidget* PushedConfirmScreenWidget = CastChecked<UConfirmScreenWidget>(InPushedWidget);
+                PushedConfirmScreenWidget->InitConfirmScreen(CreatedInfoObject, ButtonClickedCallback);
+            }
+        });
 }
