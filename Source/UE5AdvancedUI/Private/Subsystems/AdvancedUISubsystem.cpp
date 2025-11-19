@@ -2,7 +2,6 @@
 
 
 #include "Subsystems/AdvancedUISubsystem.h"
-
 #include "AdvancedUIDebugHelper.h"
 #include "AdvancedUIFunctionLibrary.h"
 #include "AUIGameplayTags.h"
@@ -104,7 +103,7 @@ void UAdvancedUISubsystem::PushConfirmScreenToModalStackBasic(EConfirmScreenType
     PushSoftWidgetToStackAsync(
         FAdvancedUIGameplayTags::AdvancedUI_WidgetStack_Modal,
         UAdvancedUIFunctionLibrary::GetAdvancedUISoftWidgetClassByTag(FAdvancedUIGameplayTags::AdvancedUI_Widget_ConfirmScreen),
-        [&, this](EAsyncPushWidgetState InPushWidgetState, UCommonActivatableWidgetBase* InPushedWidget)
+        [CreatedInfoObject,ButtonClickedCallback](EAsyncPushWidgetState InPushWidgetState, UCommonActivatableWidgetBase* InPushedWidget)
         {
             if(InPushWidgetState == EAsyncPushWidgetState::OnCreatedBeforePush)
             {

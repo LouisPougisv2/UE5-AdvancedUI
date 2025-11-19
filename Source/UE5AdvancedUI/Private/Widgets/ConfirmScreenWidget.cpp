@@ -64,7 +64,7 @@ UConfirmScreenInfoObject* UConfirmScreenInfoObject::CreateOkCancelScreen(const F
 
 void UConfirmScreenWidget::InitConfirmScreen(UConfirmScreenInfoObject* InScreenInfoObject, TFunction<void(EConfirmationScreenButtonType)> ClickedButtonCallback)
 {
-    ensureAlwaysMsgf(IsValid(InScreenInfoObject), TEXT("InScreenInforIbject parameter is not valid"));
+    ensureAlwaysMsgf(IsValid(InScreenInfoObject), TEXT("InScreenForObject parameter is not valid"));
 
     check(CommonTextBlock_Title != nullptr && CommonTextBlock_Message != nullptr)
 
@@ -82,7 +82,7 @@ void UConfirmScreenWidget::InitConfirmScreen(UConfirmScreenInfoObject* InScreenI
             });
     }
 
-    ensureMsgf(!InScreenInfoObject->ButtonsArray.IsEmpty(), TEXT("InScreenInfoObject butttons array is empty"));
+    ensureMsgf(!InScreenInfoObject->ButtonsArray.IsEmpty(), TEXT("InScreenInfoObject buttons array is empty"));
 
     for (const FConfirmScreenButtonInfo& ButtonInfo : InScreenInfoObject->ButtonsArray)
     {

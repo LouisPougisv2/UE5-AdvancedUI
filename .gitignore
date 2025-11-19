@@ -75,3 +75,4 @@ Plugins/**/Intermediate/*
 DerivedDataCache/*
 .idea/.idea.UE5AdvancedUI.dir/.idea/workspace.xml
 /.idea
+/Plugins/Developer/RiderLink

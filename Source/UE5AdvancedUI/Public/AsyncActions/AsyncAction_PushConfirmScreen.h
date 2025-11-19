@@ -18,8 +18,7 @@ class UE5ADVANCEDUI_API UAsyncAction_PushConfirmScreen : public UBlueprintAsyncA
 
 // Functions
 public:
-
-	UFUNCTION(BlueprintCallable, meta = (WorldContext = "InWorldContextObject", HidePin = "WorldContextObject"), BlueprintInternalUseOnly, DisplayName = "Show Confirmation Screen")
+	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContextObject", HidePin = "WorldContextObject"), BlueprintInternalUseOnly, DisplayName = "Show Confirmation Screen")
 	static UAsyncAction_PushConfirmScreen* PushConfirmScreen(
 		const UObject* WorldContextObject,
 		EConfirmScreenType InScreenType,
