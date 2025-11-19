@@ -30,7 +30,7 @@ public:
 	//~ End UBlueprintAsyncActionBase interface
 
 	UPROPERTY(BlueprintAssignable)
-	FOnConfirmScreenButtonClickedDelegate OnConfirmScreenButtonClickedDelegate;
+	FOnConfirmScreenButtonClickedDelegate OnButtonClickedDelegate;
 
 // Variables:
 private:

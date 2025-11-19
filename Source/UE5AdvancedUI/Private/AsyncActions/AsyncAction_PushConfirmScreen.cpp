@@ -34,7 +34,7 @@ void UAsyncAction_PushConfirmScreen::Activate()
     AdvancedSubsystem->PushConfirmScreenToModalStackBasic(CachedScreenType, CachedScreenTitle, CachedScreenMessage,
         [&](EConfirmationScreenButtonType InConfirmationScreenButtonType)
         {
-            OnConfirmScreenButtonClickedDelegate.Broadcast(InConfirmationScreenButtonType);
+            OnButtonClickedDelegate.Broadcast(InConfirmationScreenButtonType);
 
             SetReadyToDestroy();
         });

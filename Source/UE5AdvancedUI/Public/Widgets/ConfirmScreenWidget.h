@@ -60,8 +60,14 @@ class UE5ADVANCEDUI_API UConfirmScreenWidget : public UCommonActivatableWidgetBa
 // Function
 public:
 
-    /** This function gets called outside of the class when this widget is constructed & before it's pushed to a stack */
+    /** This function gets called outside the class when this widget is constructed & before it's pushed to a stack */
     void InitConfirmScreen(UConfirmScreenInfoObject* InScreenInfoObject, TFunction<void(EConfirmationScreenButtonType)> ClickedButtonCallback);
+
+protected:
+
+    //~ Begin UCommonActivatableWidget override
+    virtual UWidget* NativeGetDesiredFocusTarget() const override;
+    //~ End UCommonActivatableWidget override
     
 // Variables
 private:

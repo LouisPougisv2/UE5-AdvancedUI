@@ -88,16 +88,18 @@ void UConfirmScreenWidget::InitConfirmScreen(UConfirmScreenInfoObject* InScreenI
     {
         // Setting corresponding Action based of ConfirmationScreenButtonType
         FDataTableRowHandle InputActionRowHandle;
-        InputActionRowHandle = ButtonInfo.ConfirmationScreenButtonType == EConfirmationScreenButtonType::Confirmed ?
-            ICommonInputModule::GetSettings().GetDefaultClickAction() :
-            ICommonInputModule::GetSettings().GetDefaultBackAction();
+
+        if (ButtonInfo.ConfirmationScreenButtonType != EConfirmationScreenButtonType::Confirmed)
+        {
+            InputActionRowHandle = ICommonInputModule::GetSettings().GetDefaultBackAction();
+        }
 
         // Creating buttons from corresponding ButtonInfo
         UAdvancedUICommonButtonBase* AddedButton = DynamicEntryBox_Buttons->CreateEntry<UAdvancedUICommonButtonBase>();
         AddedButton->SetButtonText(ButtonInfo.ButtonTextDisplay);
-        AddedButton->SetTriggeredInputAction(InputActionRowHandle);
+        AddedButton->SetTriggeringInputAction(InputActionRowHandle);
         AddedButton->OnClicked().AddLambda(
-            [&]()
+            [ClickedButtonCallback, ButtonInfo, this]()
             {
                 // Next line is how the caller knows which button was clicked
                 ClickedButtonCallback(ButtonInfo.ConfirmationScreenButtonType);
@@ -111,4 +113,15 @@ void UConfirmScreenWidget::InitConfirmScreen(UConfirmScreenInfoObject* InScreenI
         // Set focus on the last button (so if we have 2 buttons (Confirm & cancel), the focus goes on the safest options -> Cancel)
         DynamicEntryBox_Buttons->GetAllEntries().Last()->SetFocus();
     }
+}
+
+UWidget* UConfirmScreenWidget::NativeGetDesiredFocusTarget() const
+{
+    // Set focus on the last button so the gamepad has an option to start with
+    if (DynamicEntryBox_Buttons->GetNumEntries() != 0)
+    {
+        return DynamicEntryBox_Buttons->GetAllEntries().Last();
+    }
+    
+    return Super::NativeGetDesiredFocusTarget();
 }
